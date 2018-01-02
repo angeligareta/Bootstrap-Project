@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title> Ultimate Calendar </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/index-style.css"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid p-0 expand">
+    <!-- Necesario para que se centre -->
+    <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+      <header class="bg-gray py-4">
+        <h1 class="text-center text-white m-0"> Ultimate Calendar </h1>
+      </header>
+
+      <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="login">
+              <a class="nav-link" href="#"> Entrar </a>
+            </li>
+            <li class="nav-item" id="register">
+              <a class="nav-link" href="#"> Registrarse </a>
+            </li>
+            <li class="nav-item" id="example">
+              <a class="nav-link" href="ejemplo-bootstrap.html"> Ejemplo Bootstrap </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Servicios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row pt-5 mx-0 bg-white">
+          <div class="offset-2 col-8 offset-sm-2 col-sm-8 offset-md-3 col-md-6 pt-5">
+
+            <form style="display: none;" class="login pt-5" id="login-form" action="welcome.html" onsubmit="return validateLoginForm()" method="get">
+              <div class="row">
+                <div class="offset-md-2 col-md-8">
+                  <input class="form-input" type="email" name="email" placeholder="Email" required/>
+                  <input class="form-input" type="password" name="password" placeholder="Contraseña" required/>
+                  <input class="form-input" type="submit" name="enter" value="Entrar" />
+                </div>
+              </div>
+            </form>
+
+            <form style="display: none;" class="pt-5" id="register-form" action="welcome.html" onsubmit="return validateRegisterForm()" method="get">
+              <div class="row">
+                <div class="offset-md-1 col-md-10">
+                  <input class="form-input" type="text" name="first-name" placeholder="Nombre" required/>
+                  <input class="form-input" type="text" name="last-name" placeholder="Apellidos" required/>
+                  <input class="form-input" type="email" name="email" placeholder="Email" required/>
+                  <input class="form-input" type="password" name="password" placeholder="Contraseña" required/>
+                  <input class="form-input" type="submit" value="Registrarse" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      <footer class="d-inline bg-gray">
+        <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta - Todos los derechos reservados </p>
+      </footer>
+
+    </div>
+  </div>
+  <script type="text/javascript" src=../JS/scripts.js></script>
+</body>
+
+</html>
